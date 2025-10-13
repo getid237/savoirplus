@@ -326,10 +326,6 @@
         })();
     </script>
     <script>
-        
-        function toggleMenu() {
-            document.getElementById('navLinks').classList.toggle('active');
-        }
 
         // Pour le mobile - toggle du dropdown
         document.querySelectorAll('.dropdown > a').forEach(link => {
@@ -385,6 +381,10 @@
             el.style.transition = 'all 0.6s ease';
             observer.observe(el);
         });
+
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
