@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogue - Math Tutorat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="Styles/index.css" rel="stylesheet">
+    <link href="Styles/blogue.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="Index.html" class="logo">
+            <img src="Images/icone_math.png" alt="Math Tutorat Logo" class="logo-img">
+            <span class="logo-text">Math Tutorat</span>
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="Tutora.html">TUTORAT</a></li>
+            <li><a href="index.html#demande">DEMANDER UN TUTEUR</a></li>
+            <li><a href="index.html#demande">DEVENIR UN TUTEUR</a></li>
+            <li><a href="Apropo.html">À PROPOS</a></li>
+            <li><a href="Tarif.html">TARIF</a></li>
+            <li><a href="Blogue.html">BLOGUE</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Articles du Blogue -->
+    <div class="blog-container">
+        <!-- Article 1 -->
+        <article class="blog-article article-1">
+            <div class="article-content">
+                <span class="article-category">Tutorat</span>
+                <h2 class="article-title">L'importance du soutien scolaire en sciences et en mathématiques</h2>
+                <p class="article-excerpt">Comment un bon tutorat peut transformer l'apprentissage et aider chaque élève à progresser à son rythme...</p>
+                <a href="#" class="read-more-btn" onclick="toggleArticle(event, 'article1')">Lire l'article</a>
+            </div>
+        </article>
+        <div id="article1" class="full-article-expanded">
+            <div class="article-image-carousel">
+                <div class="carousel-images" id="carousel1">
+                    <img src="Images/img6.jpeg" alt="Tutorat" class="carousel-image">
+                    <img src="Images/img8.jpeg" alt="Apprentissage" class="carousel-image">
+                    <img src="Images/img5.jpeg" alt="Éducation" class="carousel-image">
+                </div>
+                <div class="carousel-controls">
+                    <span class="carousel-dot active" onclick="moveCarousel('carousel1', 0)"></span>
+                    <span class="carousel-dot" onclick="moveCarousel('carousel1', 1)"></span>
+                    <span class="carousel-dot" onclick="moveCarousel('carousel1', 2)"></span>
+                </div>
+            </div>
+            <p>Les Sciences et les mathématiques sont souvent perçues comme des matières difficile, voire intimidante, par de nombreux élèves. Pourtant, elles sont essentielles dans la vie quotidienne et la réussite académique. Que ce soit pour résoudre des problèmes complexes en sciences, comprendre des concepts financiers ou même simplement faire face aux défis quotidiens, une solide maîtrise des sciences et des mathématiques est un atout.</p>
+            
+            <p>Cependant, il est bien connu que certains élèves peuvent se sentir perdus en sciences et en mathématiques. L'enseignement traditionnel en classe peut ne pas répondre à leurs besoins individuels, surtout s'ils ont des difficultés à suivre le rythme ou si les bases ne sont pas bien établies. C'est là qu'un tutorat personnalisé peut faire toute la différence.</p>
+            
+            <p>Un tuteur en sciences ou en mathématiques offre un accompagnement sur mesure, adapté aux besoins spécifiques de l'élève. Qu'il s'agisse de combler des lacunes, de renforcer des concepts déjà acquis ou de préparer des examens, le tutorat permet de progresser à son propre rythme et d'acquérir les compétences nécessaires pour réussir.</p>
+            
+            <button class="close-article" onclick="toggleArticle(event, 'article1')">Fermer l'article</button>
+        </div>
+
+        <!-- Article 2 -->
+        <article class="blog-article article-2">
+            <div class="article-content">
+                <span class="article-category">Apprentissage</span>
+                <h2 class="article-title">Pourquoi chaque élève mérite un tutorat personnalisé</h2>
+                <p class="article-excerpt">Tous les élèves apprennent différemment. Découvrez comment une approche sur mesure peut faire toute la différence...</p>
+                <a href="#" class="read-more-btn" onclick="toggleArticle(event, 'article2')">Lire l'article</a>
+            </div>
+        </article>
+        <div id="article2" class="full-article-expanded">
+            <div class="article-image-carousel">
+                <div class="carousel-images" id="carousel2">
+                    <img src="Images/img11.jpeg" alt="Étudiant" class="carousel-image">
+                    <img src="Images/img4.jpeg" alt="Apprentissage" class="carousel-image">
+                    <img src="Images/img12.jpeg" alt="Réussite" class="carousel-image">
+                </div>
+                <div class="carousel-controls">
+                    <span class="carousel-dot active" onclick="moveCarousel('carousel2', 0)"></span>
+                    <span class="carousel-dot" onclick="moveCarousel('carousel2', 1)"></span>
+                    <span class="carousel-dot" onclick="moveCarousel('carousel2', 2)"></span>
+                </div>
+            </div>
+            <p>Tous les élèves apprennent de manière différente. Certains peuvent saisir rapidement des concepts abstraits, tandis que d'autres peuvent avoir besoin de plus de temps et de soutien pour comprendre les mêmes notions.</p>
+            
+            <h3>Les avantages du tutorat personnalisé :</h3>
+            <ol>
+                <li><strong>Un accompagnement sur mesure :</strong> Un tuteur dédié peut identifier rapidement les difficultés d'un élève et adapter son approche.</li>
+                <li><strong>Une amélioration de la confiance en soi :</strong> Un suivi personnalisé permet à l'élève de progresser à son rythme.</li>
+                <li><strong>Un soutien constant :</strong> Le tutorat assure un soutien régulier pour mieux comprendre les sujets abordés.</li>
+            </ol>
+            
+            <button class="close-article" onclick="toggleArticle(event, 'article2')">Fermer l'article</button>
+        </div>
+
+        <!-- Article 3 -->
+        <article class="blog-article article-3">
+            <div class="article-content">
+                <span class="article-category">Secondaire</span>
+                <h2 class="article-title">Surmonter les défis en mathématiques et en sciences au secondaire</h2>
+                <p class="article-excerpt">Le secondaire est une étape cruciale. Découvrez comment le tutorat peut aider à combler les lacunes...</p>
+                <a href="#" class="read-more-btn" onclick="toggleArticle(event, 'article3')">Lire l'article</a>
+            </div>
+        </article>
+        <div id="article3" class="full-article-expanded">
+            <div class="article-image-carousel">
+                <div class="carousel-images" id="carousel3">
+                    <img src="Images/img12.jpeg" alt="Secondaire" class="carousel-image">
+                    <img src="Images/img9.jpeg" alt="Algèbre" class="carousel-image">
+                    <img src="Images/img3.jpeg" alt="Géométrie" class="carousel-image">
+                </div>
+                <div class="carousel-controls">
+                    <span class="carousel-dot active" onclick="moveCarousel('carousel3', 0)"></span>
+                    <span class="carousel-dot" onclick="moveCarousel('carousel3', 1)"></span>
+                    <span class="carousel-dot" onclick="moveCarousel('carousel3', 2)"></span>
+                </div>
+            </div>
+            <p>Le secondaire est une étape cruciale dans le parcours scolaire d'un élève, surtout en sciences et en mathématiques. C'est à ce moment que les concepts deviennent plus complexes.</p>
+            
+            <h3>Un tuteur qualifié peut :</h3>
+            <ul>
+                <li>Réexpliquer les mathématiques et la science de manière plus accessible.</li>
+                <li>Aider à combler les lacunes en revenant sur les bases.</li>
+                <li>Fournir un encadrement pour des révisions ciblées avant les examens.</li>
+                <li>Proposer des exercices pratiques pour renforcer les compétences.</li>
+            </ul>
+            
+            <button class="close-article" onclick="toggleArticle(event, 'article3')">Fermer l'article</button>
+        </div>
+
+        <!-- Article 4 -->
+        <article class="blog-article article-4">
+            <div class="article-content">
+                <span class="article-category">Tutorat en ligne</span>
+                <h2 class="article-title">Les avantages du tutorat en ligne</h2>
+                <p class="article-excerpt">Flexibilité, accessibilité et sécurité : découvrez pourquoi le tutorat en ligne est une excellente option...</p>
+                <a href="#" class="read-more-btn" onclick="toggleArticle(event, 'article4')">Lire l'article</a>
+            </div>
+        </article>
+        <div id="article4" class="full-article-expanded">
+            <p>Le tutorat en ligne est devenu une option populaire ces dernières années. Au-delà de la simple commodité, il offre de nombreux avantages qui peuvent transformer l'expérience d'apprentissage.</p>
+            
+            <h3>Avantages clés :</h3>
+            <ol>
+                <li><strong>Accessibilité :</strong> Pas besoin de se déplacer pour bénéficier d'un soutien de qualité.</li>
+                <li><strong>Flexibilité :</strong> Programmez des séances aux moments qui vous conviennent.</li>
+                <li><strong>Sécurité :</strong> Apprenez dans le confort de votre foyer.</li>
+                <li><strong>Technologie avancée :</strong> Utilisation de ressources interactives engageantes.</li>
+            </ol>
+            
+            <button class="close-article" onclick="toggleArticle(event, 'article4')">Fermer l'article</button>
+        </div>
+
+        <!-- Articles 5-8 en format court -->
+        <article class="blog-article article-5">
+            <div class="article-content">
+                <span class="article-category">Examens</span>
+                <h2 class="article-title">Préparer un examen en sciences ou en mathématiques</h2>
+                <p class="article-excerpt">Des stratégies efficaces pour aborder les examens avec confiance et réussir vos évaluations...</p>
+                <a href="#" class="read-more-btn" onclick="toggleArticle(event, 'article5')">Lire l'article</a>
+            </div>
+        </article>
+        <div id="article5" class="full-article-expanded">
+            <p>Les examens peuvent être une source de stress importante pour les élèves, surtout en science ou en mathématiques. La préparation adéquate est essentielle pour aborder ces tests avec confiance. Pourtant, de nombreux élèves ne savent pas comment s’organiser ou comment aborder efficacement leurs révisions. Un tutorat en mathématiques ou en sciences ciblé peut jouer un rôle clé dans la préparation aux examens.</p>
+            
+            <h3>Voici comment un tuteur peut aider un élève à se préparer de manière optimale :</h3>
+            <ol>
+                <li><strong>Révision des concepts clés :</strong> Un tuteur peut identifier les concepts qui posent problème et les revoir avec l'élève avant l'examen, assurant ainsi une bonne compréhension des points importants.</li>
+                <li><strong>Résolution d'exercices pratiques :</strong> La pratique régulière est essentielle pour maîtriser les sciences et les mathématiques. Les tuteurs fournissent des exercices adaptés à l'examen pour renforcer les compétences et améliorer les résultats.</li>
+                <li><strong>Gestion du temps et de l'anxiété :</strong> Un tuteur peut aider l'élève à gérer son temps de manière efficace pendant l'examen et à adopter des stratégies pour réduire l'anxiété. Le tutorat avant un examen de mathématiques ou de science permet non seulement d'acquérir des compétences, mais aussi de développer une mentalité positive face aux défis académiques. En travaillant avec un tuteur qualifié, un élève peut se sentir plus préparé, plus confiant et prêt à réussir. Chez Math Tutor, nous offrons un accompagnement intensif pour les élèves qui se préparent à des examens de mathématiques ou de science. Grâce à nos méthodes personnalisées, nous aidons chaque élève à atteindre ses objectifs et à exceller lors de ses évaluations.</li>
+            </ol>
+            
+            <button class="close-article" onclick="toggleArticle(event, 'article5')">Fermer l'article</button>
+        </div>
+
+        <article class="blog-article article-6">
+            <div class="article-content">
+                <span class="article-category">Concepts</span>
+                <h2 class="article-title">Le nombre Pi : Une constante essentielle</h2>
+                <p class="article-excerpt">Découvrez l'importance de Pi dans les mathématiques et ses applications pratiques...</p>
+                <a href="#" class="read-more-btn" onclick="toggleArticle(event, 'article6')">Lire l'article</a>
+            </div>
+        </article>
+        <div id="article6" class="full-article-expanded">
+            <p>Le nombre Pi, souvent représenté par la lettre grecque π, est l'une des constantes les plus célèbres et les plus fascinantes des mathématiques. Il est omniprésent dans de nombreux domaines des mathématiques et des sciences appliquées, notamment dans les calculs géométriques et trigonométriques. Qu’est-ce que Pi ? Pi est défini comme le rapport entre la circonférence d’un cercle et son diamètre. En d’autres termes, si vous mesurez le diamètre d’un cercle, vous pouvez multiplier cette valeur par Pi pour obtenir la circonférence. Ce rapport est toujours constant, quelle que soit la taille du cercle. C'est pourquoi Pi est considéré comme une constante mathématique fondamentale. Bien que Pi soit un nombre irrationnel, ce qui signifie qu'il ne peut pas être exprimé sous forme de fraction exacte et que ses décimales s'étendent à l'infini, on le représente souvent de manière approximative par 3,14 ou même 22/7. Cependant, Pi possède des millions de décimales, ce qui le rend très intéressant pour les mathématiciens qui cherchent à le calculer de manière de plus en plus précise. Pi joue un rôle crucial dans la géométrie, le calcul intégral, ainsi que dans des domaines aussi variés que l'ingénierie, la physique, et même la musique. Sa présence dans ces multiples disciplines témoigne de l'importance de cette constante et de sa capacité à relier de nombreux concepts mathématiques entre eux.</p>         
+            <button class="close-article" onclick="toggleArticle(event, 'article6')">Fermer l'article</button>
+        </div>
+
+        <article class="blog-article article-7">
+            <div class="article-content">
+                <span class="article-category">Algèbre</span>
+                <h2 class="article-title">Les suites arithmétiques expliquées</h2>
+                <p class="article-excerpt">Comprenez l'évolution des séquences de nombres et leurs applications pratiques...</p>
+                <a href="#" class="read-more-btn" onclick="toggleArticle(event, 'article7')">Lire l'article</a>
+            </div>
+        </article>
+        <div id="article7" class="full-article-expanded">
+            <p>Les suites arithmétiques sont des séquences de nombres dans lesquelles chaque terme est obtenu en ajoutant un nombre fixe au terme précédent. Ce type de suite est essentiel à la compréhension des progressions et intervient fréquemment dans les exercices de mathématiques, aussi bien au secondaire qu’au cégep. Applications des suites arithmétiques Les suites arithmétiques sont utilisées dans divers domaines des mathématiques, comme la finance pour calculer des intérêts simples, ou dans les sciences sociales pour modéliser des phénomènes où les valeurs augmentent ou diminuent de manière régulière.</p>
+            
+            <h3>Voici quelques exemples :</h3>
+            <ol>
+                <li><strong>Problèmes financiers :</strong> Les paiements égaux effectués régulièrement (comme les remboursements d’un prêt) suivent une suite arithmétique.</li>
+                <li><strong>Moyennes et tendances :</strong> Dans les séries temporelles, une suite arithmétique peut être utilisée pour modéliser une tendance linéaire. Les suites arithmétiques sont donc des outils puissants pour résoudre des problèmes pratiques et théoriques dans de nombreux domaines des mathématiques et des sciences.</li>
+            </ol>            
+            <button class="close-article" onclick="toggleArticle(event, 'article7')">Fermer l'article</button>
+        </div>
+
+        <article class="blog-article article-8">
+            <div class="article-content">
+                <span class="article-category">Calcul</span>
+                <h2 class="article-title">Les dérivées : Concept clé du calcul</h2>
+                <p class="article-excerpt">Maîtrisez ce concept fondamental et ses applications en sciences et ingénierie...</p>
+                <a href="#" class="read-more-btn" onclick="toggleArticle(event, 'article8')">Lire l'article</a>
+            </div>
+        </article>
+        <div id="article8" class="full-article-expanded">
+            <p>Les dérivées sont l'un des concepts les plus fondamentaux du calcul différentiel, une branche essentielle des mathématiques abordée au cégep et en université. Elles permettent de comprendre comment une fonction évolue, notamment comment une quantité change par rapport à une autre. Mais pourquoi et comment utiliser les dérivées ? Voici un aperçu de ce concept clé. Qu’est-ce qu’une dérivée ? La dérivée d’une fonction mesure le taux de variation de cette fonction. Autrement dit, elle nous dit à quel point la fonction change à un instant donné, ou pour une petite variation de sa variable. La dérivée peut être vue comme la pente de la tangente à la courbe de la fonction en un point donné. Une des premières applications des dérivées est la détermination de la pente d'une courbe à un point particulier. Par exemple, si une courbe représente la position d’un objet en fonction du temps, la dérivée de cette fonction représentera la vitesse de l’objet à chaque instant.</p>
+            
+            <h3>Les dérivées sont aussi utilisées pour :</h3>
+            <ol>
+                <li><strong>Optimisation :</strong> Trouver les maximums et minimums d’une fonction est une application classique des dérivées. Cela est crucial dans des domaines comme l'économie, où l'on cherche à maximiser les profits ou minimiser les coûts.</li>
+                <li><strong>Croissance et décroissance :</strong> La dérivée permet d'analyser les zones de croissance ou de décroissance d’une fonction, un outil fondamental dans l’analyse des fonctions mathématiques.</li>
+                <li><strong>Prédictions :</strong> En sciences physiques, les dérivées sont utilisées pour prédire des comportements futurs, comme la vitesse d’un objet ou le taux de variation d’une population. La maîtrise des dérivées est essentielle non seulement en mathématiques, mais aussi dans des domaines appliqués comme la physique, la biologie, l’économie et l’ingénierie, où elles permettent de modéliser des phénomènes complexes et de prendre des décisions éclairées.</li>
+            </ol>            
+            <button class="close-article" onclick="toggleArticle(event, 'article8')">Fermer l'article</button>
+        </div>
+    </div>
+
+    <!-- Footer (à charger avec shared.js ou PHP) -->
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Math Tutorat</h3>
+                <p>Votre partenaire pour la réussite en mathématiques</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/mathtutorat" target="_blank" class="social-icon" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/mathtutorat" target="_blank" class="social-icon" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contactez-nous</h3>
+                <p>📧 ouedraogokennethr@gmail.com</p>
+                <p>📱 (514) 238-2142</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="#accueil">Accueil</a>
+                <a href="#services">Demander un Tuteur</a>
+                <a href="#apropos">À propos</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Math Tutorat - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Floating Phone avec numéro -->
+    <a href="tel:+15142382142" class="floating-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+        </svg>
+        <span class="phone-number">514 238-2142</span>
+    </a>
+
+    <script>
+        // Hero Carousel
+        let currentHeroSlide = 0;
+        const heroSlides = document.querySelectorAll('.hero-slide');
+        const heroDots = document.querySelectorAll('.hero-dot');
+        const heroCarousel = document.getElementById('heroCarousel');
+
+        function goToHeroSlide(n) {
+            currentHeroSlide = n;
+            updateHeroCarousel();
+        }
+
+        function updateHeroCarousel() {
+            heroCarousel.style.transform = `translateX(-${currentHeroSlide * 100}%)`;
+            heroDots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentHeroSlide);
+            });
+        }
+
+        function nextHeroSlide() {
+            currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
+            updateHeroCarousel();
+        }
+
+        setInterval(nextHeroSlide, 4000);
+
+        // Article Image Carousels
+        function moveCarousel(carouselId, index) {
+            const carousel = document.getElementById(carouselId);
+            const dots = carousel.parentElement.querySelectorAll('.carousel-dot');
+            
+            carousel.style.transform = `translateX(-${index * 100}%)`;
+            
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        // Toggle Article
+        function toggleArticle(event, articleId) {
+            event.preventDefault();
+            const article = document.getElementById(articleId);
+            
+            if (article.classList.contains('active')) {
+                article.classList.remove('active');
+                article.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                // Fermer tous les autres articles
+                document.querySelectorAll('.full-article-expanded').forEach(a => {
+                    a.classList.remove('active');
+                });
+                
+                article.classList.add('active');
+                
+                // Scroll vers l'article avec un délai
+                setTimeout(() => {
+                    article.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        }
+
+        // Animation au scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.blog-article').forEach(article => {
+            article.style.opacity = '0';
+            article.style.transform = 'translateY(30px)';
+            article.style.transition = 'all 0.6s ease';
+            observer.observe(article);
+        });
+    </script>

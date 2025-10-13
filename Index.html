@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Tutorat - Aide en Mathématiques ou Sciences</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="Styles/index.css" rel="stylesheet">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="Index.html" class="logo">
+            <img src="Images/icone_math.png" alt="Math Tutorat Logo" class="logo-img">
+            <span class="logo-text">Math Tutorat</span>
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="Tutora.html">TUTORAT</a></li>
+            <li><a href="index.html#demande">DEMANDER UN TUTEUR</a></li>
+            <li><a href="index.html#demande">DEVENIR UN TUTEUR</a></li>
+            <li><a href="Apropo.html">À PROPOS</a></li>
+            <li><a href="Tarif.html">TARIF</a></li>
+            <li><a href="Blogue.html">BLOGUE</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="hero" id="accueil">
+        <div class="carousel" id="carousel">
+            <div class="carousel-slide">
+                <div class="hero-content">
+                    <h1>Progressez en Mathematique et Science !</h1>
+                    <p>Un accompagnement personnalisé pour exceller en mathématiques et en science</p>
+                    <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="hero-content">
+                    <h1>Des résultats incroyables !</h1>
+                    <p>Tutorat en mathematiques et science adapté à tous les niveaux.</p>
+                    <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="hero-content">
+                    <h1>La première séance est offerte !</h1>
+                    <p>Des méthodes modernes et interactives adaptées à chaque élève</p>
+                    <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="hero-content">
+                    <h1>Maîtrisez les Mathématiques et la Science !</h1>
+                    <p>Du primaire au cégep, nous vous accompagnons à chaque étape</p>
+                    <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="carousel-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+            <span class="dot" onclick="goToSlide(4)"></span>
+            <span class="dot" onclick="goToSlide(5)"></span>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="why-choose" id="apropos">
+        <div class="approach-intro">
+            <h2>Pourquoi choisir Math Tutor ?</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <p style="text-align: center; font-size: 1.2rem; color: #666; max-width: 900px; margin: 0 auto 3rem;">
+            Chez Math Tutor, nos professeurs de science et de mathématiques qualifiés sont dédiés à la réussite de chaque élève. Nous offrons un soutien sur mesure, en ligne ou en présentiel, pour les élèves du primaire, du secondaire et du cégep.
+        </p>
+        <div class="features-grid">
+            <div class="feature-card">
+                <img src="Images/img5.jpeg" alt="Professeurs qualifiés" class="feature-icon">
+                <h3>Professeurs qualifiés</h3>
+                <p>Nos enseignants sont dédiés à la réussite de chaque élève avec expertise et passion.</p>
+            </div>
+            <div class="feature-card">
+                <img src="Images/img6.jpeg" alt="Approche personnalisée" class="feature-icon">
+                <h3>Approche personnalisée</h3>
+                <p>Séances individuelles ou en petits groupes selon le style d'apprentissage de chacun.</p>
+            </div>
+            <div class="feature-card">
+                <img src="Images/img7.jpeg" alt="En ligne et présentiel" class="feature-icon">
+                <h3>Flexibilité totale</h3>
+                <p>Soutien en ligne ou présentiel pour s'adapter à vos besoins et disponibilités.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <div class="services-intro">
+            <h2>Services de tutorat</h2>
+            <div class="underline"></div>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <img src="Images/img8.jpeg" alt="Cours particulier" class="service-icon">
+                </div>
+                <h3>Cours de Mathématique</h3>
+                <p class="service-price">35 $ de l'heure</p>
+                <p class="service-details">Tutorat en ligne</p>
+                <p class="service-details">En tête-à-tête</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon-wrapper">
+                    <img src="Images/img7.jpeg" alt="Tutorat en ligne" class="service-icon">
+                </div>
+                <h3>Cours de Science</h3>
+                <p class="service-price">35 $ de l'heure</p>
+                <p class="service-details">Tutorat en ligne</p>
+                <p class="service-details">En tête-à-tête</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section - Format compact -->
+    <section class="approach-section">
+    <div class="approach-intro">
+        <h2>Notre approche pour révéler tout leur potentiel</h2>
+        <div class="underline"></div>
+    </div>
+
+    <div class="approach-cards">
+        <div class="approach-card">
+            <div class="approach-header">
+                <div class="approach-number">1</div>
+                <h3>Une préparation optimale pour maximiser les progrès</h3>
+            </div>
+            
+            <p>Qu'il s'agisse de <span class="highlight">comprendre les bases</span>, de <span class="highlight">résoudre des problèmes</span>, ou d'<span class="highlight">explorer les fonctions</span>, nos tuteurs possèdent une expertise exceptionnelle et une expérience approfondie en science et en mathématiques afin de <span class="highlight">faciliter l'apprentissage</span> de chaque élève.</p>
+        </div>
+
+        <div class="approach-card">
+            <div class="approach-header">
+                <div class="approach-number">2</div>
+                <h3>Des suivis précis pour mesurer les progrès avec clarté</h3>
+            </div>
+            
+            <p>Nos cours en ligne combinent <span class="highlight">collaboration</span> et <span class="highlight">innovation</span>, créant un environnement pédagogique dynamique. Chaque séance est suivie d'un rapport détaillé, assurant une communication claire et continue avec les parents et les étudiants.</p>
+        </div>
+
+        <div class="approach-card">
+            <div class="approach-header">
+                <div class="approach-number">3</div>
+                <h3>Des cours en groupe pour développer des compétences clés</h3>
+            </div>
+            <p>Apprendre en groupe, c'est bien plus qu'étudier ensemble : c'est se préparer à réussir. De nombreux examens, projets et situations académiques, notamment au secondaire et au cégep, reposent sur des <span class="highlight">dynamiques de groupe</span>. Nos cours offrent aux élèves une opportunité précieuse d'<span class="highlight">acquérir cette compétence</span>, demandée en classe.</p>
+        </div>
+
+        <div class="approach-card">
+            <div class="approach-header">
+                <div class="approach-number">4</div>
+                <h3>Le tutorat à petit prix pour les familles!</h3>
+            </div>
+            
+            <p>Offrez à votre enfant une qualité d'enseignement exceptionnelle <span class="highlight">sans dépasser votre budget</span>. Nos cours en ligne sont une <span class="highlight">solution économique et efficace</span>, idéale pour renforcer ses compétences tout en maîtrisant les coûts.</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Services List - BLOCS CARRÉS -->
+    <section class="services-list-container">
+        <div class="approach-intro">
+            <h2>Services</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="services-list-grid">
+            <div class="service-list-item">
+                <div class="service-list-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/>
+                    </svg>
+                </div>
+                <h4>Rattrapage scolaire</h4>
+                <p>Revoir les notions non maîtrisées et combler les lacunes grâce à une approche collective et interactive.</p>
+            </div>
+            <div class="service-list-item">
+                <div class="service-list-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+                    </svg>
+                </div>
+                <h4>Préparation aux examens</h4>
+                <p>Exercices ciblés et simulations pour renforcer la confiance et la performance lors des examens importants.</p>
+            </div>
+            <div class="service-list-item">
+                <div class="service-list-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                    </svg>
+                </div>
+                <h4>Aide aux devoirs</h4>
+                <p>Un accompagnement pas à pas pour aider les élèves à surmonter les difficultés immédiates et développer leur autonomie.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process -->
+    <section class="process" id="tarif">
+        <div class="approach-intro">
+            <h2>Commencez rapidement et simplement</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Contactez-nous</h3>
+                <p>Définir les besoins et disponibilités de votre enfant.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Jumelage avec un tuteur</h3>
+                <p>Nous le jumelons à un tuteur qualifié.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Démarrage des séances</h3>
+                <p>Vous commencez les séances de tutorat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section" id="demande">
+        <div class="contact-container">
+            <div class="approach-intro">
+                <h2>Contactez-nous dès aujourd'hui !</h2>
+                <div class="underline"></div>
+            </div>
+            <p class="contact-subtitle">Remplissez le formulaire ci-dessous et nous vous contacterons rapidement</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nom complet *</label>
+                    <input type="text" id="name" name="name" required placeholder="Votre nom">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Adresse e-mail *</label>
+                    <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Numéro de téléphone *</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="(514) 234-3456">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message / Besoins particuliers</label>
+                    <textarea id="message" name="message" placeholder="Décrivez les besoins de votre enfant..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Envoyer ma demande</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Math Tutorat</h3>
+                <p>Votre partenaire pour la réussite en science et en mathématiques</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/mathtutorat" target="_blank" class="social-icon" title="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/mathtutorat" target="_blank" class="social-icon" title="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Contactez-nous</h3>
+                <p>📧 ouedraogokennethr@gmail.com</p>
+                <p>📱 (514) 238-2142</p>
+            </div>
+            <div class="footer-section">
+                <h3>Navigation</h3>
+                <a href="Index.html">Accueil</a>
+                <a href="DemanderTutor.html">Demander un Tuteur</a>
+                <a href="Apropo.html">À propos</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Math Tutorat - Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <!-- Floating Phone avec numéro -->
+    <a href="tel:+15142382142" class="floating-phone">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 0 0-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+        </svg>
+        <span class="phone-number">514 238-2142</span>
+    </a>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("MceAc96bmToa-dBrY"); // Remplacez par votre clé publique
+        })();
+    </script>
+    <script>
+        
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+
+        // Pour le mobile - toggle du dropdown
+        document.querySelectorAll('.dropdown > a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    this.parentElement.classList.toggle('active');
+                }
+            });
+        });
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.dot');
+        const carousel = document.getElementById('carousel');
+
+        function goToSlide(n) {
+            currentSlide = n;
+            updateCarousel();
+        }
+
+        function updateCarousel() {
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateCarousel();
+        }
+
+        setInterval(nextSlide, 5000);
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .service-card, .service-list-item, .approach-card, .step').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                if (window.innerWidth <= 768) {
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const submitButton = this.querySelector('.submit-button');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Envoi en cours...';
+            submitButton.disabled = true;
+            
+            setTimeout(() => {
+                submitButton.textContent = '✓ Message envoyé !';
+                submitButton.style.background = '#27ae60';
+                
+                setTimeout(() => {
+                    this.reset();
+                    submitButton.textContent = originalText;
+                    submitButton.style.background = '#3498db';
+                    submitButton.disabled = false;
+                    alert('Merci pour votre message ! Nous vous contacterons bientôt.');
+                }, 2000);
+            }, 1500);
+        });
+
+        // Soumission du formulaire
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('.submit-button');
+            const successMessage = document.getElementById('successMessage');
+            const originalText = submitButton.textContent;
+            
+            // Désactiver le bouton
+            submitButton.disabled = true;
+            submitButton.textContent = 'Envoi en cours...';
+            
+            // Récupérer les données du formulaire
+            const dateActuelle = new Date();
+            const formData = {
+                nom: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                message: document.getElementById('message').value,
+                date: dateActuelle,
+                to_email: 'ouedraogokennethr@gmail.com'
+            };
+            
+            // Envoyer l'email
+            emailjs.send('service_pq0vyss', 'template_z4wv4ih', formData)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    
+                    // Afficher le message de succès
+                    successMessage.textContent = '✓ Merci pour votre message ! Nous vous contacterons bientôt !';
+                    successMessage.style.background = '#27ae60';
+                    successMessage.classList.add('show');
+                    
+                    // Réinitialiser le formulaire
+                    setTimeout(() => {
+                        document.getElementById('contactForm').reset();
+                        submitButton.disabled = false;
+                        submitButton.textContent = originalText;
+                        
+                        setTimeout(() => {
+                            successMessage.classList.remove('show');
+                        }, 3000);
+                    }, 2000);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    
+                    // Afficher le message d'erreur
+                    successMessage.textContent = '❌ Erreur lors de l\'envoi. Veuillez réessayer.';
+                    successMessage.style.background = '#e74c3c';
+                    successMessage.classList.add('show');
+                    submitButton.disabled = false;
+                    submitButton.textContent = originalText;
+                });
+        });
+    </script>
+</body>
+</html>
