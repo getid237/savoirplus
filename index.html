@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SAVOIR + - Aide en Mathématiques</title>
+    <title>SAVOIR + - Aide en Mathématiques, Sciences et Français</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link href="Styles/index.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="Images/favicon.png">
 </head>
 <body>
-    <!-- Navigation -->
+     <!-- Navigation -->
     <nav>
-        <a href="Index.html" class="logo">
+        <a href="index.html" class="logo">
             <img src="Images/icSavoir.png" alt="Math Tutorat Logo" class="logo-img">
             <span class="logo-text">SAVOIR +</span>
         </a>
@@ -22,12 +22,18 @@
         </div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="Tutora.html">TUTORAT</a></li>
+            <li>
+                <a href="#">TUTORAT</a>
+                <ul class="sub-menu">
+                    <li><a href="TutoraPrive.html" style="padding-left: 10%;"> TUTORAT PRIVÉ</a></li>
+                    <li><a href="TutoraSemiPrive.html" style="padding-left: 10%;"> TUTORAT SEMI-PRIVÉ</a></li>
+                </ul>
+            </li>
             <li><a href="index.html#demande">DEMANDER UN TUTEUR</a></li>
-            <li><a href="index.html#demande">DEVENIR UN TUTEUR</a></li>
+            <li><a href="index.html#demande">DEVENIR TUTEUR</a></li>
             <li><a href="Apropo.html">À PROPOS</a></li>
-            <li><a href="Tarif.html">TARIF</a></li>
             <li><a href="Blogue.html">BLOGUE</a></li>
+            <li><a href="Inscription.html">INSCRIPTION</a></li>
         </ul>
     </nav>
 
@@ -36,15 +42,15 @@
         <div class="carousel" id="carousel">
             <div class="carousel-slide">
                 <div class="hero-content">
-                    <h1>tutorat en ligne semi-privé !</h1>
-                    <p>Nous offrons un accompagnement personnalisé sous forme de tutorat en ligne semi-privé, en petits groupes de 5 élèves maximum</p>
+                    <h1>Tutorat privé, en ligne ou en présentiel !</h1>
+                    <p>Découvrez notre tutorat privé, disponible en ligne ou en présentiel, conçu pour accompagner chaque élève dans sa réussite en mathématiques, sciences et français.</p>
                     <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
                 </div>
             </div>
             <div class="carousel-slide">
                 <div class="hero-content">
-                    <h1>Progressez en Mathematique !</h1>
-                    <p>Nos séances sont proposées au tarif abordable de 25 $.</p>
+                    <h1>tutorat en ligne semi-privé !</h1>
+                    <p>Nous offrons un accompagnement personnalisé sous forme de tutorat en ligne semi-privé, en petits groupes de 5 élèves maximum</p>
                     <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
                 </div>
             </div>
@@ -57,7 +63,7 @@
             </div>
             <div class="carousel-slide">
                 <div class="hero-content">
-                    <h1>Maîtrisez les Mathématiques !</h1>
+                    <h1>Maîtrisez les mathématiques, les sciences et le français !</h1>
                     <p>Du secondaire 1 au secondaire 5, nous vous accompagnons à chaque étape</p>
                     <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
                 </div>
@@ -82,8 +88,8 @@
         </div>
         
         <p style="text-align: center; font-size: 1.2rem; color: #666; max-width: 900px; margin: 0 auto 3rem;">
-            Chez SAVOIR +, nos professeurs de mathématiques qualifiés sont dédiés à la réussite de chaque élève. Nous offrons un accompagnement personnalisé sous forme de tutorat en ligne semi-privé, en petits groupes de 5 élèves maximum, favorisant une attention optimale et un apprentissage efficace pour les élèves du secondaire.
-Nos séances sont proposées au tarif abordable de 25 $.
+            Chez SAVOIR +, nos professeurs qualifiés en mathématiques, sciences et français sont entièrement dédiés à la réussite de chaque élève. Nous proposons un accompagnement personnalisé sous forme de tutorat privé ou en petits groupes semi-privés de 5 élèves maximum, afin d’assurer une attention optimale et un apprentissage efficace pour les élèves du secondaire.
+Nos séances sont offertes à un tarif abordable de 25 $/heure pour les groupes semi-privés et 37,50 $/heure pour le tutorat privé.
         </p>
         <div class="features-grid">
             <div class="feature-card">
@@ -94,7 +100,7 @@ Nos séances sont proposées au tarif abordable de 25 $.
             <div class="feature-card">
                 <img src="Images/img6.jpeg" alt="Approche personnalisée" class="feature-icon">
                 <h3>Approche personnalisée</h3>
-                <p>Séances en petits groupes de 5 élèves maximum, pour s’adapter au style d’apprentissage de chacun.</p>
+                <p>Séances individuelles ou en petits groupes de 5 élèves maximum, pour s’adapter au style d’apprentissage de chaque élève.</p>
             </div>
             <div class="feature-card">
                 <img src="Images/img7.jpeg" alt="En ligne et présentiel" class="feature-icon">
@@ -114,13 +120,23 @@ Nos séances sont proposées au tarif abordable de 25 $.
         <div class="services-grid">
             <div class="service-card">
                 <div class="service-icon-wrapper">
+                    <img src="Images/img7.jpeg" alt="Cours particulier" class="service-icon">
+                </div>
+                <h3>💻 Tutorat privé en mathématiques, sciences et français, en ligne ou en présentiel</h3>
+                <p class="service-price">👤 Séances individuelles</p>
+                <p class="service-details">📈 Choisissez entre des séances individuelles en ligne ou à domicile selon vos besoins.</p>
+                <p class="service-details">📝 Un accompagnement personnalisé pour le primaire, le secondaire et les mathématiques au Cégep</p>
+                <p class="service-price">💲 À partir de 150 $/mois pour 4 heures de cours ou 300 $/mois pour 8 heures de cours  (37.5$/heure).</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon-wrapper">
                     <img src="Images/img8.jpeg" alt="Cours particulier" class="service-icon">
                 </div>
-                <h3>💻 Tutorat de mathématique en ligne semi-privé</h3>
+                <h3>💻 Tutorat semi-privé en mathématiques, sciences et français, en ligne</h3>
                 <p class="service-price">👥 Groupes de 5 élèves maximum</p>
-                <p class="service-details">📈 Progression adaptée à chaque style d’apprentissage</p>
-                <p class="service-details">📝 Aide aux devoirs · Renforcement des notions · Préparation aux examens</p>
-                <p class="service-price">💲 25 $ / heure</p>
+                <p class="service-details">📈 Un encadrement structuré en petits groupes, idéal pour progresser ensemble et renforcer les bases scolaires.</p>
+                <p class="service-details">📝 Les élèves bénéficient d’un suivi régulier et d’un environnement motivant.</p>
+                <p class="service-price">💲 À partir de 200 $/mois pour 8 heures de cours (25 $/heure)</p>
             </div>
         </div>
     </section>
@@ -139,7 +155,7 @@ Nos séances sont proposées au tarif abordable de 25 $.
                 <h3>Une préparation optimale pour maximiser les progrès</h3>
             </div>
             
-            <p>Qu'il s'agisse de <span class="highlight">comprendre les bases</span>, de <span class="highlight">résoudre des problèmes</span>, ou d'<span class="highlight">explorer les fonctions</span>, nos tuteurs possèdent une expertise exceptionnelle et une expérience approfondie en mathématiques afin de <span class="highlight">faciliter l'apprentissage</span> de chaque élève.</p>
+            <p>Qu'il s'agisse de <span class="highlight">comprendre les bases</span>, de <span class="highlight">résoudre des problèmes</span>, ou d'<span class="highlight">explorer les fonctions</span>, nos tuteurs possèdent une expertise exceptionnelle et une expérience approfondie en mathématiques sciences et français afin de <span class="highlight">faciliter l'apprentissage</span> de chaque élève.</p>
         </div>
 
         <div class="approach-card">
@@ -272,7 +288,7 @@ Nos séances sont proposées au tarif abordable de 25 $.
         <div class="footer-content">
             <div class="footer-section">
                 <h3>SAVOIR +</h3>
-                <p>Votre partenaire pour la réussite en mathématiques</p>
+                <p>Votre partenaire pour la réussite en mathématiques, sciences et français</p>
                 <div class="social-links">
                     <a href="https://www.facebook.com/share/1FhBAYd8od/?mibextid=wwXIfr" target="_blank" class="social-icon" title="Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -293,7 +309,7 @@ Nos séances sont proposées au tarif abordable de 25 $.
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
-                <a href="Index.html">Accueil</a>
+                <a href="index.html">Accueil</a>
                 <a href="DemanderTutor.html">Demander un Tuteur</a>
                 <a href="Apropo.html">À propos</a>
             </div>
@@ -395,38 +411,13 @@ Nos séances sont proposées au tarif abordable de 25 $.
             });
         });
 
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const submitButton = this.querySelector('.submit-button');
-            const originalText = submitButton.textContent;
-            submitButton.textContent = 'Envoi en cours...';
-            submitButton.disabled = true;
-            
-            setTimeout(() => {
-                submitButton.textContent = '✓ Message envoyé !';
-                submitButton.style.background = '#27ae60';
-                
-                setTimeout(() => {
-                    this.reset();
-                    submitButton.textContent = originalText;
-                    submitButton.style.background = '#3498db';
-                    submitButton.disabled = false;
-                    alert('Merci pour votre message ! Nous vous contacterons bientôt.');
-                }, 2000);
-            }, 1500);
-        });
-
         // Soumission du formulaire
         document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
+            e.preventDefault();           
             const submitButton = this.querySelector('.submit-button');
-            const successMessage = document.getElementById('successMessage');
             const originalText = submitButton.textContent;
-            
-            // Désactiver le bouton
-            submitButton.disabled = true;
             submitButton.textContent = 'Envoi en cours...';
+            submitButton.disabled = true; 
             
             // Récupérer les données du formulaire
             const dateActuelle = new Date();
@@ -444,28 +435,24 @@ Nos séances sont proposées au tarif abordable de 25 $.
                 .then(function(response) {
                     console.log('SUCCESS!', response.status, response.text);
                     
-                    // Afficher le message de succès
-                    successMessage.textContent = '✓ Merci pour votre message ! Nous vous contacterons bientôt !';
-                    successMessage.style.background = '#27ae60';
-                    successMessage.classList.add('show');
-                    
                     // Réinitialiser le formulaire
                     setTimeout(() => {
-                        document.getElementById('contactForm').reset();
-                        submitButton.disabled = false;
-                        submitButton.textContent = originalText;
+                        submitButton.textContent = '✓ Message envoyé !';
+                        submitButton.style.background = '#27ae60';
                         
                         setTimeout(() => {
-                            successMessage.classList.remove('show');
-                        }, 3000);
-                    }, 2000);
+                            document.getElementById("contactForm").reset();
+                            submitButton.textContent = originalText;
+                            submitButton.style.background = '#3498db';
+                            submitButton.disabled = false;
+                            alert('Merci pour votre message ! Nous vous contacterons bientôt.');
+                        }, 2000);
+                    }, 1500);
                 }, function(error) {
                     console.log('FAILED...', error);
                     
                     // Afficher le message d'erreur
-                    successMessage.textContent = '❌ Erreur lors de l\'envoi. Veuillez réessayer.';
-                    successMessage.style.background = '#e74c3c';
-                    successMessage.classList.add('show');
+                    alert('❌ Erreur lors de l\'envoi. Veuillez réessayer.');                  
                     submitButton.disabled = false;
                     submitButton.textContent = originalText;
                 });

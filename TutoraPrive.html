@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutorat - SAVOIR +</title>
+    <title>Tutorat privé - SAVOIR +</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>
         * {
@@ -415,13 +415,14 @@
     </style>
     <link href="Styles/index.css" rel="stylesheet">
      <link href="Styles/avis.css" rel="stylesheet">
+     <link href="Styles/tarif.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="Images/favicon.png">
 
 </head>
 <body>
-    <!-- Navigation -->
+      <!-- Navigation -->
     <nav>
-        <a href="Index.html" class="logo">
+        <a href="index.html" class="logo">
             <img src="Images/icSavoir.png" alt="Math Tutorat Logo" class="logo-img">
             <span class="logo-text">SAVOIR +</span>
         </a>
@@ -432,39 +433,52 @@
         </div>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.html">ACCUEIL</a></li>
-            <li><a href="Tutora.html">TUTORAT</a></li>
+            <li>
+                <a href="#">TUTORAT</a>
+                <ul class="sub-menu">
+                    <li><a href="TutoraPrive.html" style="padding-left: 10%;"> TUTORAT PRIVÉ</a></li>
+                    <li><a href="TutoraSemiPrive.html" style="padding-left: 10%;"> TUTORAT SEMI-PRIVÉ</a></li>
+                </ul>
+            </li>
             <li><a href="index.html#demande">DEMANDER UN TUTEUR</a></li>
-            <li><a href="index.html#demande">DEVENIR UN TUTEUR</a></li>
+            <li><a href="index.html#demande">DEVENIR TUTEUR</a></li>
             <li><a href="Apropo.html">À PROPOS</a></li>
-            <li><a href="Tarif.html">TARIF</a></li>
             <li><a href="Blogue.html">BLOGUE</a></li>
+            <li><a href="Inscription.html">INSCRIPTION</a></li>
         </ul>
     </nav>
 
     <!-- Hero Section -->
     <section class="about-hero">
         <div class="hero-content">
-            <h1>Tutorat semi-privé</h1>
-            <p>Découvrez nos cours particuliers semi-privés en mathématiques</p>
+            <h1>Tutorat privé</h1>
+            <p>Découvrez nos cours particuliers privés en mathématiques, sciences ou français, en ligne ou en présentiel</p>
         </div>
     </section>
 
     <!-- Main Content -->
     <div class="about-container">
-        <!-- Introduction -->
-        <section class="intro-section">
-            <h3 id="tutoring-title" class="tutoring-title">
-                Apprenez les mathématiques en toute confiance grâce à notre tutorat en ligne semi-privé !
-            </h3>
-            <p class="tutoring-subtitle">
-                Nos séances se déroulent <strong>exclusivement en ligne</strong>, en petits groupes de <strong>4 à 5 élèves</strong>,
-                afin d’offrir un équilibre parfait entre accompagnement personnalisé et dynamique de groupe.
-                <br><strong>- Un suivi étroit</strong> : chaque élève bénéficie de l’attention du professeur
-                <br><strong>- Des explications adaptées</strong> au niveau et au rythme de chacun
-                <br><strong>- Une interaction motivante</strong> avec les autres élèves, favorisant l’entraide et l’échange
-                <br><strong>- Des progrès mesurables</strong> en compréhension, vitesse de résolution et confiance en soi
-            </p>
-        </section>
+
+        <!-- Pricing Grid -->
+        <div class="pricing-grid">
+            <!-- Cours de Mathématique -->
+            <div class="pricing-card">
+                <div class="pricing-icon-wrapper">
+                    <img src="Images/img4.jpeg" alt="Cours de mathématique" class="pricing-icon">
+                </div>
+                <div class="pricing-content">
+                    <h3 class="pricing-title">Cours de Mathématique, Sciences ou Français</h3>
+                    <div class="pricing-amount">💲 À partir de 150 $/mois pour 4 heures de cours ou 300 $/mois pour 8 heures de cours  (37.5$/heure).</div>
+                    <ul class="pricing-features">
+                        <li><strong>Tutorat privés en ligne ou en présentiel</strong></li>
+                        <li>👤 Séances individuelles</li>
+                        <li>📈 Choisissez entre des séances individuelles en ligne ou à domicile selon vos besoins.</li>
+                        <li>📝 Un accompagnement personnalisé pour le primaire, le secondaire et les mathématiques au Cégep</li>
+                    </ul>
+                    <a href="index.html#demande" class="pricing-cta">Réserver maintenant</a>
+                </div>
+            </div>
+        </div>
 
         <section class="services" id="services">
         <div class="services-intro">
@@ -480,9 +494,9 @@
                 <h3>📝 Secondaire 1</h3>
                 <p class="service-price">Samedi 10h-12h</p>
                 <p class="service-details"><strong>les bases, gagner en confiance</strong> 
-                    <br>Un accompagnement axé sur la consolidation des bases en mathématiques. L’objectif : renforcer la confiance, consolider les acquis et développer de bonnes méthodes d’étude.
-                <p class="service-price" style="font-size: 22px;">💲Tarif: 25 $ / h</p>
-                <a href="index.html#demande" class="cta-button">S'inscrire</a>
+                    <br>Un accompagnement axé sur la consolidation des bases en mathématiques, sciences ou français. L’objectif : renforcer la confiance, consolider les acquis et développer de bonnes méthodes d’étude.
+                <p class="service-price" style="font-size: 22px;">💲Tarif: 37.5 $ / h</p>
+                <a href="Inscription.html" class="cta-button">S'inscrire</a>
             </div>
              <div class="service-card">
                 <div class="service-icon-wrapper">
@@ -492,8 +506,8 @@
                 <p class="service-price" >Samedi 10h-12h</p>
                 <p class="service-details"><strong>Approfondir les notions.</strong> 
                     <br>On approfondit les notions vues en classe tout en aidant l’élève à mieux comprendre les concepts clés. Idéal pour consolider les apprentissages et prévenir les difficultés futures.
-                <p class="service-price" style="font-size: 22px;">💲Tarif: 25 $ / h</p>
-                <a href="index.html#demande" class="cta-button">S'inscrire</a>
+                <p class="service-price" style="font-size: 22px;">💲Tarif: 37.5 $ / h</p>
+                <a href="Inscription.html" class="cta-button">S'inscrire</a>
             </div>
             <div class="service-card">
                 <div class="service-icon-wrapper">
@@ -503,8 +517,8 @@
                 <p class="service-price" style="font-size: 22px;">Dimanche 10h30-12h30</p>
                 <p class="service-details"><strong>Clarifier les notions.</strong> 
                     <br>Les cours visent à clarifier les notions plus complexes et à améliorer la rigueur dans la résolution de problèmes. L’accent est mis sur la compréhension, la méthode et la préparation aux examens.
-                <p class="service-price" style="font-size: 22px;">💲Tarif: 25 $ / h</p>
-                <a href="index.html#demande" class="cta-button">S'inscrire</a>
+                <p class="service-price" style="font-size: 22px;">💲Tarif: 37.5 $ / h</p>
+                <a href="Inscription.html" class="cta-button">S'inscrire</a>
             </div>
             <div class="service-card">
                 <div class="service-icon-wrapper">
@@ -513,9 +527,9 @@
                 <h3>📝 Secondaire 4</h3>
                 <p class="service-price">Samedi 15h-17h</p>
                 <p class="service-details"><strong>Un soutien ciblé</strong> 
-                    <br>Un soutien ciblé pour les matières de plus en plus exigeantes, notamment en mathématiques et en sciences. Nos tuteurs aident à combler les lacunes et à développer une autonomie d’apprentissage.
-                    <p class="service-price"style="font-size: 22px;">💲Tarif: 25 $ / h</p>
-                <a href="index.html#demande" class="cta-button">S'inscrire</a>
+                    <br>Un soutien ciblé pour les matières de plus en plus exigeantes, notamment en mathématiques, en sciences ou en français. Nos tuteurs aident à combler les lacunes et à développer une autonomie d’apprentissage.
+                    <p class="service-price"style="font-size: 22px;">💲Tarif: 37.5 $ / h</p>
+                <a href="Inscription.html" class="cta-button">S'inscrire</a>
             </div>
             <div class="service-card">
                 <div class="service-icon-wrapper">
@@ -525,9 +539,9 @@
                 <p class="service-price">Samedi 15h-17h</p>
                 <p class="service-details"><strong>Une préparation complète</strong> 
                     <br>Une préparation complète pour les examens de fin d’année et l’entrée au cégep. Les séances favorisent la maîtrise des notions clés et la gestion du stress scolaire.
-                <p class="service-price"style="font-size: 22px;">💲Tarif: 25 $ / h</p>
+                <p class="service-price"style="font-size: 22px;">💲Tarif: 37.5 $ / h</p>
                 </p>
-                <a href="index.html#demande" class="cta-button">S'inscrire</a>
+                <a href="Inscription.html" class="cta-button">S'inscrire</a>
             </div>
         </div>
         
@@ -536,7 +550,7 @@
     <div class="reviews-section">
         <div class="section-header">
             <h2>Avis de nos élèves</h2>
-            <p>Découvrez les témoignages de nos élèves qui ont progressé en mathématiques</p>
+            <p>Découvrez les témoignages de nos élèves qui ont progressé</p>
         </div>
 
         <div class="overall-rating">
@@ -625,13 +639,63 @@
         </div>
     </div>
 
+    <!-- Additional Services -->
+        <div class="additional-services">
+            <h3>Nos services incluent</h3>
+            <div class="services-list">
+                <div class="service-item">
+                    <h4>📚 Rattrapage scolaire</h4>
+                    <p>Revoir les notions non maîtrisées et combler les lacunes grâce à une approche collective et interactive.</p>
+                </div>
+                <div class="service-item">
+                    <h4>📝 Préparation aux examens</h4>
+                    <p>Exercices ciblés et simulations pour renforcer la confiance et la performance lors des examens importants.</p>
+                </div>
+                <div class="service-item">
+                    <h4>✍️ Aide aux devoirs</h4>
+                    <p>Un accompagnement pas à pas pour aider les élèves à surmonter les difficultés immédiates et développer leur autonomie.</p>
+                </div>
+            </div>
+        </div>
 
-        <!-- CTA Section -->
-        <section class="cta-section">
-            <h2>Prêt à commencer votre parcours de réussite ?</h2>
-            <p>Contactez-nous dès aujourd'hui pour bénéficier de notre aide en mathématiques, que ce soit pour vous ou votre enfant.</p>
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h3>Questions fréquentes</h3>
+            
+            <div class="faq-item">
+                <div class="faq-question">Comment fonctionne le paiement ?</div>
+                <div class="faq-answer">Le paiement se fait à l'heure. Vous payez uniquement pour les séances que vous réservez. Nous acceptons les virements bancaires et les paiements en ligne sécurisés.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Y a-t-il des forfaits disponibles ?</div>
+                <div class="faq-answer">Oui ! Nous offrons des forfaits mensuels avantageux pour les élèves qui souhaitent plusieurs séances par semaine. Contactez-nous pour plus d'informations sur nos forfaits personnalisés.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Puis-je annuler une séance ?</div>
+                <div class="faq-answer">Oui, vous pouvez annuler ou reporter une séance jusqu'à 24 heures avant l'heure prévue sans frais. Les annulations tardives peuvent être facturées.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Les cours sont-ils disponibles pour le secondaire ?</div>
+                <div class="faq-answer">Absolument ! Nous offrons des cours pour le secondaire. Nos tuteurs s'adaptent aux besoins spécifiques de chaque élève.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Quelle est la durée minimale d'une séance ?</div>
+                <div class="faq-answer">La durée minimale d'une séance est d'une heure. Nous recommandons des séances de 1 à 2 heures pour une efficacité optimale selon les besoins de l'élève.</div>
+            </div>
+        </div>
+
+        <!-- Contact Banner -->
+        <div class="contact-banner">
+            <h3>Prêt à commencer ?</h3>
+            <p>Réservez votre première séance dès aujourd'hui et découvrez la différence !</p>
             <a href="index.html#demande" class="cta-button">Contactez-nous maintenant</a>
-        </section>
+        </div>
+
+        
     </div>
 
     <!-- Footer -->
@@ -639,7 +703,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h3>SAVOIR +</h3>
-                <p>Votre partenaire pour la réussite en mathématiques</p>
+                <p>Votre partenaire pour la réussite en mathématiques, sciences ou français</p>
                 <div class="social-links">
                     <a href="https://www.facebook.com/share/1FhBAYd8od/?mibextid=wwXIfr" target="_blank" class="social-icon" title="Facebook">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -660,7 +724,7 @@
             </div>
             <div class="footer-section">
                 <h3>Navigation</h3>
-                <a href="Index.html">Accueil</a>
+                <a href="index.html">Accueil</a>
                 <a href="DemanderTutor.html">Demander un Tuteur</a>
                 <a href="Apropo.html">À propos</a>
             </div>
