@@ -29,7 +29,7 @@
                     <li><a href="TutoraSemiPrive.html" style="padding-left: 10%;"> TUTORAT SEMI-PRIVÉ</a></li>
                 </ul>
             </li>
-            <li><a href="index.html#demande">DEMANDER UN TUTEUR</a></li>
+            <li><a href="Inscription.html">DEMANDER UN TUTEUR</a></li>
             <li><a href="index.html#demande">DEVENIR TUTEUR</a></li>
             <li><a href="Apropo.html">À PROPOS</a></li>
             <li><a href="Blogue.html">BLOGUE</a></li>
@@ -44,28 +44,28 @@
                 <div class="hero-content">
                     <h1>Tutorat privé, en ligne ou en présentiel !</h1>
                     <p>Découvrez notre tutorat privé, disponible en ligne ou en présentiel, conçu pour accompagner chaque élève dans sa réussite en mathématiques, sciences et français.</p>
-                    <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
+                    <a href="Inscription.html" class="cta-button">RÉSERVER UN TUTEUR</a>
                 </div>
             </div>
             <div class="carousel-slide">
                 <div class="hero-content">
                     <h1>tutorat en ligne semi-privé !</h1>
                     <p>Nous offrons un accompagnement personnalisé sous forme de tutorat en ligne semi-privé, en petits groupes de 5 élèves maximum</p>
-                    <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
+                    <a href="Inscription.html" class="cta-button">RÉSERVER UN TUTEUR</a>
                 </div>
             </div>
             <div class="carousel-slide">
                 <div class="hero-content">
-                    <h1>La première séance est offerte !</h1>
-                    <p>Des méthodes modernes et interactives adaptées à chaque élève</p>
-                    <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
+                    <h1>Services de tutorat : Primaire - Secondaire et Cegep</h1>
+                    <p>Soutien scolaire personnalisé du primaire au cégep pour améliorer la compréhension et la réussite académique.</p>
+                    <a href="Inscription.html" class="cta-button">RÉSERVER UN TUTEUR</a>
                 </div>
             </div>
             <div class="carousel-slide">
                 <div class="hero-content">
                     <h1>Maîtrisez les mathématiques, les sciences et le français !</h1>
                     <p>Du secondaire 1 au secondaire 5, nous vous accompagnons à chaque étape</p>
-                    <a href="#demande" class="cta-button">RÉSERVER UN TUTEUR</a>
+                    <a href="Inscription.html" class="cta-button">RÉSERVER UN TUTEUR</a>
                 </div>
             </div>
             
@@ -88,14 +88,15 @@
         </div>
         
         <p style="text-align: center; font-size: 1.2rem; color: #666; max-width: 900px; margin: 0 auto 3rem;">
-            Chez SAVOIR +, nos professeurs qualifiés en mathématiques, sciences et français sont entièrement dédiés à la réussite de chaque élève. Nous proposons un accompagnement personnalisé sous forme de tutorat privé ou en petits groupes semi-privés de 5 élèves maximum, afin d’assurer une attention optimale et un apprentissage efficace pour les élèves du secondaire.
-Nos séances sont offertes à un tarif abordable de 25 $/heure pour les groupes semi-privés et 37,50 $/heure pour le tutorat privé.
+            Chez SAVOIR +, nos tuteurs sont de vrais enseignants, formés et spécialisés pour guider chaque élève vers la réussite.
+            Experts en mathématiques, sciences et français, ils offrent un accompagnement adapté aux besoins de chacun, que ce soit
+             en tutorat privé ou en petits groupes semi-privés de 5 élèves maximum. Ce format garantit une attention optimale et un apprentissage efficace pour les élèves du primaire, du secondaire et du cégep.
         </p>
         <div class="features-grid">
             <div class="feature-card">
                 <img src="Images/img5.jpeg" alt="Professeurs qualifiés" class="feature-icon">
                 <h3>Professeurs qualifiés</h3>
-                <p>Nos enseignants sont dédiés à la réussite de chaque élève avec expertise et passion.</p>
+                <p>Nos enseignants sont de vrais professionnels de l’éducation, formés pour guider chaque élève avec expertise et bienveillance.</p>
             </div>
             <div class="feature-card">
                 <img src="Images/img6.jpeg" alt="Approche personnalisée" class="feature-icon">
@@ -135,7 +136,7 @@ Nos séances sont offertes à un tarif abordable de 25 $/heure pour les groupes 
                 <h3>💻 Tutorat semi-privé en mathématiques, sciences et français, en ligne</h3>
                 <p class="service-price">👥 Groupes de 5 élèves maximum</p>
                 <p class="service-details">📈 Un encadrement structuré en petits groupes, idéal pour progresser ensemble et renforcer les bases scolaires.</p>
-                <p class="service-details">📝 Les élèves bénéficient d’un suivi régulier et d’un environnement motivant.</p>
+                <p class="service-details">📝 Un accompagnement offerts exclusivement aux élèves du secondaire.</p>
                 <p class="service-price">💲 À partir de 200 $/mois pour 8 heures de cours (25 $/heure)</p>
             </div>
         </div>
@@ -310,7 +311,7 @@ Nos séances sont offertes à un tarif abordable de 25 $/heure pour les groupes 
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <a href="index.html">Accueil</a>
-                <a href="DemanderTutor.html">Demander un Tuteur</a>
+                <a href="Inscription.html">Demander un Tuteur</a>
                 <a href="Apropo.html">À propos</a>
             </div>
         </div>
@@ -407,6 +408,18 @@ Nos séances sont offertes à un tarif abordable de 25 $/heure pour les groupes 
                 }
                 if (window.innerWidth <= 768) {
                     document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+
+        // sous menu prive et semie privee sur mobile
+        document.addEventListener("DOMContentLoaded", function () {
+            const tutoratLink = document.querySelector(".nav-links > li > a[href='#']");
+
+            tutoratLink.addEventListener("click", function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault(); // empêche le lien #
+                    this.parentElement.classList.toggle("active");
                 }
             });
         });

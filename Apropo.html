@@ -439,7 +439,7 @@
                     <li><a href="TutoraSemiPrive.html" style="padding-left: 10%;"> TUTORAT SEMI-PRIVÉ</a></li>
                 </ul>
             </li>
-            <li><a href="index.html#demande">DEMANDER UN TUTEUR</a></li>
+            <li><a href="Inscription.html">DEMANDER UN TUTEUR</a></li>
             <li><a href="index.html#demande">DEVENIR TUTEUR</a></li>
             <li><a href="Apropo.html">À PROPOS</a></li>
             <li><a href="Blogue.html">BLOGUE</a></li>
@@ -501,8 +501,20 @@
             <!-- Secondaire -->
             <div class="level-card">
                 <div class="level-icon">📐</div>
+                <h3>Élèves du primaire</h3>
+                <p>Les élèves du primaire bénéficient d’un accompagnement personnalisé visant à consolider les bases essentielles (lecture, écriture, mathématiques), à développer de bonnes habitudes de travail et à renforcer leur confiance en eux, afin de favoriser une progression scolaire solide et durable.</p>
+            </div>
+
+            <div class="level-card">
+                <div class="level-icon">📐</div>
                 <h3>Élèves du Secondaire</h3>
                 <p>Les élèves du secondaire bénéficient d'un soutien pour renforcer les fondamentaux qu'ils auraient pu négliger, suivi d'une étude approfondie des matières spécifiques à leur niveau, ainsi qu'une préparation ciblée aux examens, leur permettant ainsi de développer leurs compétences et d'améliorer leurs résultats.</p>
+            </div>
+
+            <div class="level-card">
+                <div class="level-icon">📐</div>
+                <h3>Élèves du cégep</h3>
+                <p>Les étudiants du cégep bénéficient d’un soutien académique axé sur l’approfondissement des notions vues en classe, le développement de méthodes d’étude efficaces, ainsi qu’une préparation rigoureuse aux examens et aux travaux, leur permettant d’optimiser leur performance et leur autonomie scolaire.</p>
             </div>
         </div>
 
@@ -627,7 +639,7 @@
         <section class="cta-section">
             <h2>Prêt à commencer votre parcours de réussite ?</h2>
             <p>Contactez-nous dès aujourd'hui pour bénéficier de notre aide en mathématiques, sciences et français, que ce soit pour vous ou votre enfant.</p>
-            <a href="index.html#demande" class="cta-button">Contactez-nous maintenant</a>
+            <a href="Inscription.html" class="cta-button">Contactez-nous maintenant</a>
         </section>
     </div>
 
@@ -658,7 +670,7 @@
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <a href="index.html">Accueil</a>
-                <a href="DemanderTutor.html">Demander un Tuteur</a>
+                <a href="Inscription.html">Demander un Tuteur</a>
                 <a href="Apropo.html">À propos</a>
             </div>
         </div>
@@ -728,6 +740,18 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                }
+            });
+        });
+
+        // sous menu prive et semie privee sur mobile
+        document.addEventListener("DOMContentLoaded", function () {
+            const tutoratLink = document.querySelector(".nav-links > li > a[href='#']");
+
+            tutoratLink.addEventListener("click", function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault(); // empêche le lien #
+                    this.parentElement.classList.toggle("active");
                 }
             });
         });

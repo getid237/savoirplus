@@ -24,6 +24,17 @@
             display: block;
         }
 
+        @media (max-width: 768px) {
+            .sub-menu {
+                position: static;
+                display: none;
+            }
+
+            .nav-links li.active .sub-menu {
+                display: block;
+            }
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
             overflow-x: hidden;

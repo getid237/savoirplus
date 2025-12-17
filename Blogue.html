@@ -32,7 +32,7 @@
                     <li><a href="TutoraSemiPrive.html" style="padding-left: 10%;"> TUTORAT SEMI-PRIVÉ</a></li>
                 </ul>
             </li>
-            <li><a href="index.html#demande">DEMANDER UN TUTEUR</a></li>
+            <li><a href="Inscription.html">DEMANDER UN TUTEUR</a></li>
             <li><a href="index.html#demande">DEVENIR TUTEUR</a></li>
             <li><a href="Apropo.html">À PROPOS</a></li>
             <li><a href="Blogue.html">BLOGUE</a></li>
@@ -249,7 +249,7 @@
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <a href="index.html">Accueil</a>
-                <a href="DemanderTutor.html">Demander un Tuteur</a>
+                <a href="Inscription.html">Demander un Tuteur</a>
                 <a href="Apropo.html">À propos</a>
             </div>
         </div>
@@ -363,5 +363,18 @@
             article.style.transform = 'translateY(30px)';
             article.style.transition = 'all 0.6s ease';
             observer.observe(article);
+        });
+
+
+        // sous menu prive et semie privee sur mobile
+        document.addEventListener("DOMContentLoaded", function () {
+            const tutoratLink = document.querySelector(".nav-links > li > a[href='#']");
+
+            tutoratLink.addEventListener("click", function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault(); // empêche le lien #
+                    this.parentElement.classList.toggle("active");
+                }
+            });
         });
     </script>

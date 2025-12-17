@@ -30,7 +30,7 @@
                     <li><a href="TutoraSemiPrive.html" style="padding-left: 10%;"> TUTORAT SEMI-PRIVÉ</a></li>
                 </ul>
             </li>
-            <li><a href="index.html#demande">DEMANDER UN TUTEUR</a></li>
+            <li><a href="Inscription.html">DEMANDER UN TUTEUR</a></li>
             <li><a href="index.html#demande">DEVENIR TUTEUR</a></li>
             <li><a href="Apropo.html">À PROPOS</a></li>
             <li><a href="Blogue.html">BLOGUE</a></li>
@@ -93,7 +93,10 @@
                             <option value="2e secondaire">2e secondaire</option>
                             <option value="3e secondaire">3e secondaire</option>
                             <option value="4e secondaire">4e secondaire</option>
-                            <option value="5e secondaire + option Mathématiques CÉGEP">5e secondaire + option Mathématiques CÉGEP</option>
+                            <option value="5e secondaire">5e secondaire</option>
+                        </optgroup>
+                        <optgroup label="CEGEP">
+                            <option value="CEGEP">CEGEP</option>
                         </optgroup>
                     </select>
                 </div>
@@ -126,19 +129,8 @@
                     <select id="formuleTutorat" name="formuleTutorat" required>
                         <option value="" selected disabled>-- Sélectionnez --</option>
 
-                        <optgroup label="Tutorat privé en ligne">
-                            <option value="Tutorat privé en ligne – 4 h/mois : 150 $">Tutorat privé en ligne – 4 h/mois : 150 $</option>
-                            <option value="Tutorat privé en ligne – 8 h/mois : 300 $">Tutorat privé en ligne – 8 h/mois : 300 $</option>
-                            <option value="Tutorat privé en ligne – X h/mois : 25 $/h">Tutorat privé en ligne – X h/mois : 25 $/h</option>
-                        </optgroup>
-                        <optgroup label="Tutorat privé en présence">
-                            <option value="Tutorat privé en présence – 4 h/mois : 150 $">Tutorat privé en présence – 4 h/mois : 150 $</option>
-                            <option value="Tutorat privé en présence – 8 h/mois : 300 $">Tutorat privé en présence – 8 h/mois : 300 $</option>
-                            <option value="Tutorat privé en présence – X h/mois : 25 $/h">Tutorat privé en présence – X h/mois : 25 $/h</option>
-                        </optgroup>
-                        <optgroup label="Tutorat en groupe">
-                            <option value="Tutorat en groupe – 8 h/mois : 200 $/mois">Tutorat en groupe – 8 h/mois : 200 $/mois </option>
-                        </optgroup>
+                        <option value="Tutorat privé">Tutorat privé</option>
+                        <option value="Tutorat semi-privé">Tutorat semi-privé</option>
                         
                     </select>
                 </div>
@@ -250,7 +242,7 @@
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <a href="index.html">Accueil</a>
-                <a href="DemanderTutor.html">Demander un Tuteur</a>
+                <a href="Inscription.html">Demander un Tuteur</a>
                 <a href="Apropo.html">À propos</a>
             </div>
         </div>
@@ -570,6 +562,19 @@
             }
 
             });
+
+
+            // sous menu prive et semie privee sur mobile
+        document.addEventListener("DOMContentLoaded", function () {
+            const tutoratLink = document.querySelector(".nav-links > li > a[href='#']");
+
+            tutoratLink.addEventListener("click", function (e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault(); // empêche le lien #
+                    this.parentElement.classList.toggle("active");
+                }
+            });
+        });
     </script>
 </body>
 </html>
