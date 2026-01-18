@@ -126,12 +126,22 @@
 
                 <div class="form-group">
                     <label for="formuleTutorat">Formule de tutorat souhaitée *</label>    
-                    <select id="formuleTutorat" name="formuleTutorat" required>
-                        <option value="" selected disabled>-- Sélectionnez --</option>
-
-                        <option value="Tutorat privé">Tutorat privé</option>
-                        <option value="Tutorat semi-privé">Tutorat semi-privé</option>
+                    <select name="formuleTutorat" id="formuleTutorat" required>
+                        <option value="">-- Sélectionnez --</option>
                         
+                        <optgroup label="Tutorat privé - En ligne">
+                            <option value="Tutorat privé - En ligne 4h/mois : 150 $">4 h/mois : 150 $</option>
+                            <option value="Tutorat privé - En ligne 8h/mois : 300 $">8 h/mois : 300 $</option>
+                        </optgroup>
+                        
+                        <optgroup label="Tutorat privé - En présence">
+                            <option value="Tutorat privé - En présence 4h/mois : 150 $">4 h/mois : 150 $</option>
+                            <option value="Tutorat privé - En présence 8h/mois : 300 $">8 h/mois : 300 $</option>
+                        </optgroup>
+                        
+                        <optgroup label="Tutorat semi-privé">
+                            <option value="Tutorat semi-privé 8 h/mois : 200 $">8 h/mois : 200 $ (secondaire uniquement)</option>
+                        </optgroup>
                     </select>
                 </div>
 
@@ -466,7 +476,9 @@
 
                 let titremail1Client = "Votre inscription est confirmée – Savoir +";
                 let contentmail1Client = "Bonjour,"+
-                "\n\n\nMerci pour votre inscription. Nous confirmons que tout est désormais complété."+
+                "\n\n\nMerci pour votre inscription."+ 
+                "\n\n\nVous avez choisi la formule : "+document.getElementById('formuleTutorat').value + 
+                "\n\n\nNous confirmons que tout est désormais complété."+
                 "\n\nVous recevrez dans les prochaines 24 heures un courriel vous donnant accès à notre plateforme, où vous pourrez suivre les séances et l’évolution de votre enfant. Un professeur correspondant à ses besoins lui sera ensuite assigné."+
                 "\n\nLa première facture sera envoyée un mois après la réception de ce courriel, puis chaque mois par la suite."+
                 "\n\nPaiements acceptés : carte débit, carte crédit, PayPal via la plateforme ou Interac."+
